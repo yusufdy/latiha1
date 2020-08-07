@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Yusuf Dwi Munif Apriliyaldy" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="400dp"
+        android:background="@color/colorAccent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0">
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_below="@+id/nama"/>
+        <EditText
+            android:id="@+id/upassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ulang Password"
+            android:layout_below="@+id/password"/>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upassword"
+            android:layout_marginLeft="140dp"
+            android:text="DAFTAR" />
+    </RelativeLayout>
+</LinearLayout>
